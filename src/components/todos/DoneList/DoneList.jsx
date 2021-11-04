@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as todosActions from '../../../redux/todos/todos-actions';
 
 
-function DoneList({ todo }) {   
+function DoneList({ done }) {   
 
     return (
         <div className={s.container}>
@@ -11,18 +11,18 @@ function DoneList({ todo }) {
                 <h2>Done</h2>                
             </div>
 
-            {/* <ul>
-                {todo && todo.map(todo => 
+            <ul>
+                {done && done.map(todo => 
                     <li key={todo.id}>{todo.text}</li>
                 )}
-            </ul>            */}
+            </ul>           
                
         </div>
     )
 }
 
 const mapStateToProps = state => ({
-    todo: state.todos.todo,
+    done: state.todos.done,
 });
 
 const mapDispatchToProps = dispatch => ({

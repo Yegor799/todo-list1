@@ -11,5 +11,6 @@ export const addTodo = createAction('todos/add', text => ({
 
 export const deleteTodo = createAction('todos/delete');
 export const moveInprogress = createAction('todos/moveInprogress');
+export const moveDone = createAction('todos/moveDone')
 export const filterTodo = createAction('todos/filter');
 
