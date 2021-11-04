@@ -1,0 +1,12 @@
+.container {
+  width: 340px;
+  padding: 20px;
+  min-height: 700px;
+  border-radius: 10px;
+  background-color: #4d4d4d;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
