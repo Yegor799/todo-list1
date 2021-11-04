@@ -11,11 +11,11 @@ function DoneList({ todo }) {
                 <h2>Done</h2>                
             </div>
 
-            <ul>
+            {/* <ul>
                 {todo && todo.map(todo => 
                     <li key={todo.id}>{todo.text}</li>
                 )}
-            </ul>           
+            </ul>            */}
                
         </div>
     )

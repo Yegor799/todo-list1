@@ -2,18 +2,45 @@
   width: 340px;
   padding: 20px;
   min-height: 700px;
+  overflow: auto;
   border-radius: 10px;
   background-color: #4d4d4d;
 }
 
 .main {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
+  border-bottom: solid 2px white;
 }
 
 button {
+  display: block;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.listItem {
+  min-height: 100px;
+  overflow: hidden;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  border: solid 2px red;
+  border-radius: 10px;
+}
+
+.listButton {
+  margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  background-color: red;
   border-radius: 15px;
-  outline-style: solid;
-  outline-width: medium;
-  outline-color: firebrick;
+  height: 50px;
 }

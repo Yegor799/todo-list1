@@ -9,4 +9,5 @@
 .main {
   display: flex;
   justify-content: space-between;
+  border-bottom: solid 2px white;
 }

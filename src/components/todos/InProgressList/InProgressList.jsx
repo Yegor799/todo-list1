@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as todosActions from '../../../redux/todos/todos-actions';
 
 
-function InProgressList({ todo }) {   
+function InProgressList({ inProgress }) {   
 
     return (
         <div className={s.container}>
@@ -13,7 +13,7 @@ function InProgressList({ todo }) {
             </div>
 
             <ul>
-                {todo && todo.map(todo => 
+                {inProgress && inProgress.map(todo => 
                     <li key={todo.id}>{todo.text}</li>
                 )}
             </ul>           
@@ -23,11 +23,11 @@ function InProgressList({ todo }) {
 }
 
 const mapStateToProps = state => ({
-    todo: state.todos.todo,
+    inProgress: state.todos.inProgress,
 });
 
-const mapDispatchToProps = dispatch => ({
-    addTodo: text => dispatch(todosActions.addTodo(text))
-})
+// const mapDispatchToProps = dispatch => ({
+//     addTodo: text => dispatch(todosActions.addTodo(text))
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(InProgressList)
+export default connect(mapStateToProps, null)(InProgressList)
