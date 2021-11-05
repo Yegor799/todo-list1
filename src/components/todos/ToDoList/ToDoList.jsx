@@ -55,7 +55,10 @@ function ToDoList({ todo, addTodo, deleteTodo, moveInprogress }) {
                 <form action="submit" onSubmit={onSubmit}>
                 <label>
                     <input type="text" onChange={onChange} value={text} />
-                    <button type="button" onClick={handleCancelInput}>Cancel</button>
+                    <div className={s.buttons}>
+                      <button type="button" onClick={onSubmit}>Add</button>
+                      <button type="button" onClick={handleCancelInput}>Cancel</button>
+                    </div>
                 </label>
                 </form>
             }            

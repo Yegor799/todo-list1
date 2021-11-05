@@ -4,7 +4,7 @@
   min-height: 700px;
   overflow: auto;
   border-radius: 10px;
-  background-color: #4d4d4d;
+  background-color: #202020;
 }
 
 .main {
@@ -14,19 +14,12 @@
   border-bottom: solid 2px white;
 }
 
-button {
-  display: block;
-  height: 40px;
-  border-radius: 10px;
-  border: none;
-}
-
 .listItem {
   min-height: 100px;
   overflow: hidden;
   padding: 10px 10px;
   margin-bottom: 5px;
-  border: solid 2px red;
+  border: solid 1px rgb(216, 223, 230);
   border-radius: 10px;
 }
 
@@ -36,5 +29,6 @@ button {
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 15px;
 }

@@ -14,10 +14,12 @@ function InProgressList({ inProgress, deleteTodo, moveDone }) {
 
             <ul>
                 {inProgress && inProgress.map(todo => 
-                    <li key={todo.id}>
+                    <li key={todo.id} className={s.listItem}>
                         {todo.text}
-                        <button type='button' onClick={() => moveDone(todo)}>Done</button>
-                        <button type="button" className={s.listButton} onClick={()=> deleteTodo(todo.id)}>Delete</button>
+                        <div className={s.buttons}>
+                        <button type='button' className={s.listButton} onClick={() => moveDone(todo)}>Done</button>
+                        <button type="button" className={s.listButton} onClick={() => deleteTodo(todo.id)}>Delete</button>
+                        </div>
                     </li>
                 )}
             </ul>           

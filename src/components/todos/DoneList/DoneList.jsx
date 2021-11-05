@@ -13,7 +13,9 @@ function DoneList({ done }) {
 
             <ul>
                 {done && done.map(todo => 
-                    <li key={todo.id}>{todo.text}</li>
+                    <li key={todo.id} className={s.listItem}>
+                        {todo.text}                        
+                    </li>
                 )}
             </ul>           
                
