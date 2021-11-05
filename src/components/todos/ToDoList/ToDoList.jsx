@@ -33,7 +33,7 @@ function ToDoList({ todo, addTodo, deleteTodo, moveInprogress }) {
         <div className={s.container}>
             <div className={s.main}>
                 <h2>To Do</h2>
-                <button type="button" onClick={() =>setIsVisibleInput(!isVisibleInput)}>NEW TASK</button>
+                <button type="button" onClick={() =>setIsVisibleInput(!isVisibleInput)} className={s.newTaskButton}>NEW TASK</button>
             </div>
            
 
@@ -56,7 +56,7 @@ function ToDoList({ todo, addTodo, deleteTodo, moveInprogress }) {
                 <label>
                     <input type="text" onChange={onChange} value={text} />
                     <div className={s.buttons}>
-                      <button type="button" onClick={onSubmit}>Add</button>
+                      <button type="button" onClick={onSubmit} className={s.addButton}>Add</button>
                       <button type="button" onClick={handleCancelInput}>Cancel</button>
                     </div>
                 </label>

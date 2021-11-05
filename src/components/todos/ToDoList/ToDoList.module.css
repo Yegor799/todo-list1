@@ -11,24 +11,27 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px rgb(103, 104, 105);
 }
 
 button {
   display: block;
+  padding: 0 20px;
   height: 40px;
   border-radius: 10px;
-  border: none;
-  background-color: rgb(28, 114, 235);
+  background-color: #202020;
+  border: solid 1px rgb(103, 104, 105);
   color: rgb(216, 223, 230);
+  cursor: pointer;
 }
 
 .listItem {
   min-height: 100px;
+  line-height: 30px;
   overflow: hidden;
   padding: 10px 10px;
   margin-bottom: 5px;
-  border: solid 1px rgb(216, 223, 230);
+  border: solid 1px rgb(103, 104, 105);
   border-radius: 10px;
 }
 
@@ -47,6 +50,16 @@ input {
   color: rgb(216, 223, 230);
   width: 330px;
   height: 30px;
-  border: solid 1px rgb(216, 223, 230);
+  border: solid 1px rgb(103, 104, 105);
   border-radius: 10px;
+}
+
+/* .addButton {
+  background-color: rgb(28, 114, 235);
+  border: none;
+} */
+
+button:hover {
+  background-color: rgb(28, 114, 235);
+  border: none;
 }

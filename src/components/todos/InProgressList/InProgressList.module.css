@@ -16,10 +16,11 @@
 
 .listItem {
   min-height: 100px;
+  line-height: 30px;
   overflow: hidden;
   padding: 10px 10px;
   margin-bottom: 5px;
-  border: solid 1px rgb(216, 223, 230);
+  border: solid 1px rgb(103, 104, 105);
   border-radius: 10px;
 }
 
